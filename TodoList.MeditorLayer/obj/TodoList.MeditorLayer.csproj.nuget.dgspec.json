@@ -4,14 +4,103 @@
     "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\Casgem_TodoList\\TodoList.MeditorLayer\\TodoList.MeditorLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\Casgem_TodoList\\TodoList.MeditorLayer\\TodoList.MeditorLayer.csproj": {
+    "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\Casgem_TodoList\\TodoList.DataAccessLayer\\TodoList.DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\Casgem_TodoList\\TodoList.MeditorLayer\\TodoList.MeditorLayer.csproj",
-        "projectName": "TodoList.MeditorLayer",
-        "projectPath": "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\Casgem_TodoList\\TodoList.MeditorLayer\\TodoList.MeditorLayer.csproj",
+        "projectUniqueName": "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\Casgem_TodoList\\TodoList.DataAccessLayer\\TodoList.DataAccessLayer.csproj",
+        "projectName": "TodoList.DataAccessLayer",
+        "projectPath": "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\Casgem_TodoList\\TodoList.DataAccessLayer\\TodoList.DataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\bugra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\Casgem_TodoList\\TodoList.MeditorLayer\\obj\\",
+        "outputPath": "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\Casgem_TodoList\\TodoList.DataAccessLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\bugra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\Casgem_TodoList\\TodoList.EntityLayer\\TodoList.EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\Casgem_TodoList\\TodoList.EntityLayer\\TodoList.EntityLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[5.0.16, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\Casgem_TodoList\\TodoList.EntityLayer\\TodoList.EntityLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\Casgem_TodoList\\TodoList.EntityLayer\\TodoList.EntityLayer.csproj",
+        "projectName": "TodoList.EntityLayer",
+        "projectPath": "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\Casgem_TodoList\\TodoList.EntityLayer\\TodoList.EntityLayer.csproj",
+        "packagesPath": "C:\\Users\\bugra\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\Casgem_TodoList\\TodoList.EntityLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bugra\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +128,128 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[5.0.16, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\Casgem_TodoList\\TodoList.MeditorLayer\\TodoList.MeditorLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\Casgem_TodoList\\TodoList.MeditorLayer\\TodoList.MeditorLayer.csproj",
+        "projectName": "TodoList.MeditorLayer",
+        "projectPath": "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\Casgem_TodoList\\TodoList.MeditorLayer\\TodoList.MeditorLayer.csproj",
+        "packagesPath": "C:\\Users\\bugra\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\Casgem_TodoList\\TodoList.MeditorLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\bugra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\Casgem_TodoList\\TodoList.DataAccessLayer\\TodoList.DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\Casgem_TodoList\\TodoList.DataAccessLayer\\TodoList.DataAccessLayer.csproj"
+              },
+              "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\Casgem_TodoList\\TodoList.EntityLayer\\TodoList.EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\Casgem_TodoList\\TodoList.EntityLayer\\TodoList.EntityLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[5.0.16, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

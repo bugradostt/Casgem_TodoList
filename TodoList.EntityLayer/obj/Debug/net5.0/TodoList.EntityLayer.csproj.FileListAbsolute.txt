@@ -1,0 +1,15 @@
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_TodoList\TodoList.EntityLayer\bin\Debug\net5.0\TodoList.EntityLayer.deps.json
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_TodoList\TodoList.EntityLayer\bin\Debug\net5.0\TodoList.EntityLayer.runtimeconfig.json
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_TodoList\TodoList.EntityLayer\bin\Debug\net5.0\TodoList.EntityLayer.runtimeconfig.dev.json
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_TodoList\TodoList.EntityLayer\bin\Debug\net5.0\TodoList.EntityLayer.dll
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_TodoList\TodoList.EntityLayer\bin\Debug\net5.0\TodoList.EntityLayer.pdb
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_TodoList\TodoList.EntityLayer\obj\Debug\net5.0\TodoList.EntityLayer.csproj.AssemblyReference.cache
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_TodoList\TodoList.EntityLayer\obj\Debug\net5.0\TodoList.EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_TodoList\TodoList.EntityLayer\obj\Debug\net5.0\TodoList.EntityLayer.AssemblyInfoInputs.cache
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_TodoList\TodoList.EntityLayer\obj\Debug\net5.0\TodoList.EntityLayer.AssemblyInfo.cs
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_TodoList\TodoList.EntityLayer\obj\Debug\net5.0\TodoList.EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_TodoList\TodoList.EntityLayer\obj\Debug\net5.0\TodoList.EntityLayer.dll
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_TodoList\TodoList.EntityLayer\obj\Debug\net5.0\refint\TodoList.EntityLayer.dll
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_TodoList\TodoList.EntityLayer\obj\Debug\net5.0\TodoList.EntityLayer.pdb
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_TodoList\TodoList.EntityLayer\obj\Debug\net5.0\TodoList.EntityLayer.genruntimeconfig.cache
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_TodoList\TodoList.EntityLayer\obj\Debug\net5.0\ref\TodoList.EntityLayer.dll

@@ -1,4 +1,5 @@
-﻿@{
+﻿@model List<TodoList.MeditorLayer.MeditorPattern.Results.GetTodoListQueryResult>
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -9,11 +10,180 @@
 
 <div>
 
-    <div class="input-group">
-            <input type="text" class="form-control" placeholder="Yeni bir todo ekleyin" >
-            <input type="date" style="max-width:150px" class="form-control">
-            <input type="submit" value="Ekle" class="btn btn-success">
-    </div>
+    <form method="post" action="/Todo/AddTodoList/">
+
+        <div class="input-group">
+            <input type="text" required class="form-control" name="TodoName" placeholder="Yeni bir todo ekleyin">
+            <input type="date" required style="max-width:150px" name="TodoDate" class="form-control">
+            <button type="submit" class="btn btn-success">
+                <i class="fas fa-plus"></i> Ekle
+            </button>
+
+        </div>
+
+
+    </form>
+
+
+    @if (Model.Count==0)
+    {
+        <div class="alert alert-danger mt-4" role="alert">
+            Yapılacak todo yok! Lütfen yeni bir todo ekleyiniz.
+        </div>
+
+    }
+    else
+    {
+        <table class="table table-striped mt-4">
+
+
+            <tr>
+                <th>#</th>
+                <th style="width:500px">Todo</th>
+                <th>Zamanı</th>
+                <th></th>
+
+
+            </tr>
+
+            @{
+                int a = 1;
+            }
+            @foreach (var i in Model)
+            {
+
+                <tr>
+                    @if (i.TodoStatus == false)
+                    {
+                        <th>
+                            <span style=" text-decoration: line-through; color:#ccc">-</span>
+                        </th>
+                        <td>
+                            <span style=" text-decoration: line-through; color:#ccc">@i.TodoName</span>
+                        </td>
+                        <td>
+                            <span style=" text-decoration: line-through; color:#ccc">@i.TodoDate.ToShortDateString()</span>
+                        </td>
+                    }
+                    else
+                    {
+                        <th>
+                            @a
+                        </th>
+                        <td>
+                            @i.TodoName
+                        </td>
+                        <td>
+                            @i.TodoDate.ToShortDateString()
+                        </td>
+
+                    }
+
+
+
+
+                    <td>
+
+                        @if (i.TodoStatus == true)
+                        {
+                            <a class="btn btn-outline-secondary" href="/Todo/StatusFalseTodoList/@i.TodoId">
+                                <i class="fas fa-check"></i>
+                            </a>
+                        }
+                        else
+                        {
+                            <a class="btn btn-outline-info" href="/Todo/StatusTrueTodoList/@i.TodoId">
+                                <i class="fas fa-times"></i>
+                            </a>
+                        }
+
+
+
+
+
+                        <!--Edit-->
+                        <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#modalEdit_@i.TodoId">
+                            <i class="fas fa-pencil-alt"></i>
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="modalEdit_@i.TodoId" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+
+                                <form method="post" action="/Todo/UpdateTodoList/">
+                                    ü
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="staticBackdropLabel">Todo Güncelle</h5>
+
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <input type="hidden" name="TodoId" value="@i.TodoId" />
+
+                                            <div class="mb-3">
+                                                <label>Todo</label>
+                                                <input type="text" name="TodoName" placeholder="Bir todo yazınız" class="form-control" value="@i.TodoName" />
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label>Zamanı</label>
+                                                <input type="date" name="TodoDate" class="form-control" value="2023-07-30" />
+                                            </div>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">İptal</button>
+                                            <button type="submit" class="btn btn-warning">Güncelle</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--Edit-->
+                        <!--Delete-->
+                        <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#modalDelete_@i.TodoId">
+                            <i class="fas fa-trash"></i>
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="modalDelete_@i.TodoId" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">Todo Sil</h5>
+
+                                    </div>
+                                    <div class="modal-body">
+                                        <b>@i.TodoName</b> todosunu silmek istediğinizden emin misiniz?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">İptal</button>
+                                        <a href="/Todo/DeleteTodoList/@i.TodoId" class="btn btn-danger">Sil</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Delete-->
+
+
+
+
+                    </td>
+
+                </tr>
+
+                a++;
+            }
+        </table>
+
+
+        
+    }
+
+    
+  
 
 </div>
 
