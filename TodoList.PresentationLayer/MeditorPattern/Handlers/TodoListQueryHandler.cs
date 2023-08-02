@@ -30,7 +30,8 @@ namespace TodoList.MeditorLayer.MeditorPattern.Handlers
                 TodoId = x.TodoId,
                 TodoName = x.TodoName,
                 TodoDate = x.TodoDate,
-                TodoStatus = x.TodoStatus
+                TodoStatus = x.TodoStatus,
+                TodoColor  = x.TodoColor,
             }).AsNoTracking().ToListAsync();
         }
     }

@@ -22,7 +22,8 @@ namespace TodoList.PresentationLayer.MeditorPattern.Handlers
             {
                 TodoName = request.TodoName,
                 TodoDate = request.TodoDate,
-                TodoStatus = true
+                TodoStatus = true,
+                TodoColor = request.TodoColor
             });
             await _context.SaveChangesAsync();
             return Unit.Value;

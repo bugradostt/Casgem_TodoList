@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7MSs7b44sVRHMwSycA4hC2+6KZ0nDDFsKLFG9LgQhWyG8Do52n0EwIKcv/266+HfIahN9NHRgVb7oOutUr5hJQ==",
+  "dgSpecHash": "LsSwDlW+ajWt7AlZRx1eKPXKFFHeguWQhEXHRLPG22ziVt1C1bEi5KzLoYP7ciwFj4PqdFzXSeqeq85iCQtHeQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\Casgem_TodoList\\TodoList.PresentationLayer\\TodoList.PresentationLayer.csproj",
   "expectedPackageFiles": [
@@ -24,6 +24,7 @@
     "C:\\Users\\bugra\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\bugra\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
     "C:\\Users\\bugra\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\bugra\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\bugra\\.nuget\\packages\\npgsql\\5.0.16\\npgsql.5.0.16.nupkg.sha512",
     "C:\\Users\\bugra\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\5.0.10\\npgsql.entityframeworkcore.postgresql.5.0.10.nupkg.sha512",
     "C:\\Users\\bugra\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",

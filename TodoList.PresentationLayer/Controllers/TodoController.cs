@@ -26,20 +26,20 @@ namespace TodoList.PresentationLayer.Controllers
         {
             p.TodoStatus = true;
             await _mediator.Send(p);
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", "Schedule");
         }
 
         public async Task<IActionResult> DeleteTodoList(int id)
         {
             await _mediator.Send(new RemoveTodoListCommand(id));
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", "Schedule");
         }
 
         [HttpPost]
         public async Task<IActionResult> UpdateTodoList(UpdateTodoListCommand p)
         {
             await _mediator.Send(p);
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", "Schedule");
         }
 
       

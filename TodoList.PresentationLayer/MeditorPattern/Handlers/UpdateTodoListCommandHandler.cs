@@ -19,6 +19,7 @@ namespace TodoList.PresentationLayer.MeditorPattern.Handlers
             var values = _context.Todos.Find(request.TodoId);
             values.TodoName = request.TodoName;
             values.TodoDate = request.TodoDate;
+            values.TodoColor = request.TodoColor;
             await _context.SaveChangesAsync();
             return Unit.Value; ;
         }

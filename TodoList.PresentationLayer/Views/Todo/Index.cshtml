@@ -40,6 +40,7 @@
             <tr>
                 <th>#</th>
                 <th style="width:500px">Todo</th>
+                <th>Rengi</th>
                 <th>Zamanı</th>
                 <th></th>
 
@@ -61,6 +62,12 @@
                         <td>
                             <span style=" text-decoration: line-through; color:#ccc">@i.TodoName</span>
                         </td>
+
+                        <td>
+                            <span style=" text-decoration: line-through; color:#ccc">
+                                <div style="width:50px; height:50px;  border-radius:50% ; background-color:@i.TodoColor"></div>
+                            </span>
+                        </td>
                         <td>
                             <span style=" text-decoration: line-through; color:#ccc">@i.TodoDate.ToShortDateString()</span>
                         </td>
@@ -73,6 +80,14 @@
                         <td>
                             @i.TodoName
                         </td>
+                        <td>
+                            <span>
+                                <div style="width:50px; height:50px; border-radius:50% ; background-color:@i.TodoColor"></div>
+                            </span>
+
+
+                        </td>
+                      
                         <td>
                             @i.TodoDate.ToShortDateString()
                         </td>
@@ -126,9 +141,15 @@
                                                 <input type="text" name="TodoName" placeholder="Bir todo yazınız" class="form-control" value="@i.TodoName" />
                                             </div>
 
+
+                                            <div class="mb-3">
+                                                <label>Rengi</label>
+                                                <input type="color" name="TodoColor" placeholder="Bir todo yazınız" class="form-control" value="@i.TodoColor" />
+                                            </div>
+
                                             <div class="mb-3">
                                                 <label>Zamanı</label>
-                                                <input type="date" name="TodoDate" class="form-control" value="2023-07-30" />
+                                                <input type="date" name="TodoDate" class="form-control" value="2023-08-02" />
                                             </div>
 
                                         </div>

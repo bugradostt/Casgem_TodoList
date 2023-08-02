@@ -8,6 +8,7 @@ namespace TodoList.PresentationLayer.MeditorPattern.Commands
         public int TodoId { get; set; }
         public string TodoName { get; set; }
         public DateTime TodoDate { get; set; }
+        public string TodoColor { get; set; }
 
     }
 }

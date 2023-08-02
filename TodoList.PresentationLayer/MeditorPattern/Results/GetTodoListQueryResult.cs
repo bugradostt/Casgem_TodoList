@@ -12,6 +12,7 @@ namespace TodoList.MeditorLayer.MeditorPattern.Results
         public string TodoName { get; set; }
         public DateTime TodoDate { get; set; }
         public bool TodoStatus { get; set; }
+        public string TodoColor { get; set; }
 
     }
 }

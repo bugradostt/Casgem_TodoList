@@ -55,3 +55,4 @@ C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_TodoList\TodoList.Prese
 C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_TodoList\TodoList.PresentationLayer\obj\Debug\net5.0\ref\TodoList.PresentationLayer.dll
 C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_TodoList\TodoList.PresentationLayer\bin\Debug\net5.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_TodoList\TodoList.PresentationLayer\obj\Debug\net5.0\Razor\Views\Schedule\Index.cshtml.g.cs
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\Casgem_TodoList\TodoList.PresentationLayer\bin\Debug\net5.0\Newtonsoft.Json.dll

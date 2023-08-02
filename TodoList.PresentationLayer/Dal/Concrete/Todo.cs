@@ -12,5 +12,6 @@ namespace TodoList.PresentationLayer.Dal.Concrete
         public string TodoName { get; set; }
         public DateTime TodoDate { get; set; }
         public bool TodoStatus { get; set; }
+        public string TodoColor { get; set; }
     }
 }

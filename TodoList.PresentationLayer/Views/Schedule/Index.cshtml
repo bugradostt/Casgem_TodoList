@@ -115,10 +115,32 @@
                         </div>
                         <!-- /.card -->
                         <div class="card">
+
+
                             <div class="card-header">
                                 <h3 class="card-title">Yeni Görev Tanımla</h3>
                             </div>
                             <div class="card-body">
+
+
+
+                                <form method="post" action="/Todo/AddTodoList/">
+
+                                    <div >
+                                        <input type="text" required class="form-control mb-3" name="TodoName" placeholder="Yeni bir todo ekleyin">
+                                        <input type="date" required name="TodoDate" class="form-control mb-3">
+                                        <input type="color" required name="TodoColor" class="form-control mb-3">
+                                        <button type="submit" class="btn btn-success form-control">
+                                            <i class="fas fa-plus"></i> Ekle
+                                        </button>
+
+                                    </div>
+
+
+                                </form>
+
+
+@*
                                 <div class="btn-group" style="width: 100%; margin-bottom: 10px;">
                                     <!--<button type="button" id="color-chooser-btn" class="btn btn-info btn-block dropdown-toggle" data-toggle="dropdown">Color <span class="caret"></span></button>-->
                                     <ul class="fc-color-picker" id="color-chooser">
@@ -138,7 +160,7 @@
                                     </div>
                                     <!-- /btn-group -->
                                 </div>
-                                <!-- /input-group -->
+                                <!-- /input-group -->*@
                             </div>
                         </div>
                     </div>
@@ -253,7 +275,7 @@
             ini_events($('#external-events div.external-event'))
 
             /* initialize the calendar
-             -----------------------------------------------------------------*/
+            -----------------------------------------------------------------*/
             //Date for the calendar events (dummy data)
             var date = new Date()
             var d = date.getDate(),
@@ -293,51 +315,7 @@
                 'themeSystem': 'bootstrap',
                 //Random default events
                 events: [
-                    {
-                        title: 'Tüm Gün Etkinlikleri',
-                        start: new Date(y, m, 1),
-                        backgroundColor: '#f56954', //red
-                        borderColor: '#f56954', //red
-                        allDay: true
-                    },
-                    {
-                        title: 'Gelen Mesajlar',
-                        start: new Date(y, m, d - 5),
-                        end: new Date(y, m, d - 2),
-                        backgroundColor: '#f39c12', //yellow
-                        borderColor: '#f39c12' //yellow
-                    },
-                    {
-                        title: 'Diğer Randevular',
-                        start: new Date(y, m, d, 10, 30),
-                        allDay: false,
-                        backgroundColor: '#0073b7', //Blue
-                        borderColor: '#0073b7' //Blue
-                    },
-                    {
-                        title: 'İş Görüşmeleri',
-                        start: new Date(y, m, d, 12, 0),
-                        end: new Date(y, m, d, 14, 0),
-                        allDay: false,
-                        backgroundColor: '#00c0ef', //Info (aqua)
-                        borderColor: '#00c0ef' //Info (aqua)
-                    },
-                    {
-                        title: 'Yeni Başlıklar',
-                        start: new Date(y, m, d + 1, 19, 0),
-                        end: new Date(y, m, d + 1, 22, 30),
-                        allDay: false,
-                        backgroundColor: '#00a65a', //Success (green)
-                        borderColor: '#00a65a' //Success (green)
-                    },
-                    {
-                        title: 'Yeni Yapılan Yorumlar',
-                        start: new Date(y, m, 28),
-                        end: new Date(y, m, 29),
-                        url: 'http://google.com/',
-                        backgroundColor: '#3c8dbc', //Primary (light-blue)
-                        borderColor: '#3c8dbc' //Primary (light-blue)
-                    }
+                  
                 ],
                 editable: true,
                 droppable: true, // this allows things to be dropped onto the calendar !!!
@@ -350,7 +328,38 @@
                 }
             });
 
+
+            // sayfa yüklendiğinde db veriler çekildi
+            $(document).ready(function () {
+                $.ajax({
+                    contentType: "application/json",
+                    dataType: "json",
+                    type: "Get",
+                    url: "/Schedule/List/",
+                    success: function (data) {
+                        var values = jQuery.parseJSON(data);
+                        console.log(values);
+
+                        var externalEvents = [];
+                        $.each(values, function (index, value) {
+                            externalEvents.push({
+                                title: value.TodoName,
+                                start: value.TodoDate,
+                                end: value.TodoDate,
+                                backgroundColor: value.TodoColor, // blue
+                                borderColor: '#36a2eb', // blue
+                                allDay: false
+                            });
+                        });
+
+                        calendar.addEventSource(externalEvents);
+                        calendar.refetchEvents();
+                    }
+                });
+            });
+
          
+        //
 
             calendar.render();
             // $('#calendar').fullCalendar()
@@ -369,6 +378,7 @@
                     'border-color': currColor
                 })
             })
+
             $('#add-new-event').click(function (e) {
                 e.preventDefault()
                 //Get value and make sure it is not null
@@ -393,7 +403,13 @@
                 //Remove event from text input
                 $('#new-event').val('')
             })
-        })
+       
+       
+       
+       
+            }   
+        
+        )
 
 
     </script>
